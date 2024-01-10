@@ -9,6 +9,7 @@ On the business front, Airbnb for Work has everything needed to do your job on t
 ## Project Views:
 
 This project aims to analyze Airbnb data using MongoDB Atlas, perform data cleaning and preparation, develop interactive geospatial visualizations, and create dynamic plots to gain insights into pricing variations,availability patterns, and location-based trends.
+The dataset is available in MongoDB Atlas as sample_airbnb. Anyone can create the Atlas account and access this database collection for data explorations and visualizations.
 
 ## Technologies used:
 
@@ -40,13 +41,17 @@ Explore visualizations created from this dataset using tools like Power BI and S
 - Map Visualization of Properties (Choropleth Map or Scatter Geo Map)
 - Frequency of Amenities (Horizontal Bar Chart)
 
-## Analysis and Findings
+## Analysis and Findings:
 
-## Usage
-
-Feel free to use this dataset for exploratory data analysis, visualization, or any other analysis tasks. Make sure to adhere to any licensing or usage restrictions associated with the dataset.
+- Based on the above analysis, the type of the property plays major role in accommodation. Mostly, people are tending to stay in Apartment and House due to various factors. Compare to other countries, Condominium stay rises in United States.
+- In all the countries, the people would prefer cancellation policies for accommodation bookings and it would be in moderate,flexible and even strict_14 days with grace period mode.
+- Reviews and ratings are playing the important role in accommodation bookings.If the reviews and ratings are high, the bookings will be high.
+- All over the world, people would expect some basic amenities while booking the room for stay. In Airbnb, most hotels, apartments provide basic amenities like kitchen, Wi-Fi, TV, dryer, Office setup, Parking, Elevators, Microwave, Fire Extinguisher etc.
+- Increase in amenities would tend to increase in price also.
 
 ## Credits
 
-The dataset was collected and made available by MOngoDB Atlas. Credits and acknowledgment should be given to the original data source when using or sharing this dataset.
+The dataset was collected and made available in MongoDB Atlas as sample_airbnb. Thank you  Guvi team for this project.
+
+### Thank you All!
 
