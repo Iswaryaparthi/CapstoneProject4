@@ -21,6 +21,8 @@ Python scripting, MongoDB Atlas, Exporting CSV file, Handling large dataset, Dat
 - import pandas as pd
 - import plotly.express as px
 - from collections import Counter
+- import matplotlib.pyplot as plt
+- import seaborn as sns
   
 ## Visualizations:
 
@@ -35,6 +37,7 @@ Explore visualizations created from this dataset using tools like Power BI and S
 
 ### Streamlit Visualizations:
 
+- Finding Outliers in Price variations (Box Plot Chart)
 - Distribution of Property Types in Each Country (Stacked Bar Chart)
 - Distribution of Cancellation Policies (Donut Chart)
 - Number of Reviews vs. Average Review Scores (Bubble Chart)
@@ -45,6 +48,7 @@ Explore visualizations created from this dataset using tools like Power BI and S
 
 - Based on the above analysis, the type of the property plays major role in accommodation. Mostly, people are tending to stay in Apartment and House due to various factors. Compare to other countries, Condominium stay rises in United States.
 - In all the countries, the people would prefer cancellation policies for accommodation bookings and it would be in moderate,flexible and even strict_14 days with grace period mode.
+- BoxPlot chart helps to find the price variations and their outliers. In this dataset,the price varies  from minimum to maximun of 50k. Here, the maximum price lying in between of 0-20k but we can see one outlier which is present in the price of around 50k. So, this is the outlier in this particular dataset.
 - Reviews and ratings are playing the important role in accommodation bookings.If the reviews and ratings are high, the bookings will be high.
 - All over the world, people would expect some basic amenities while booking the room for stay. In Airbnb, most hotels, apartments provide basic amenities like kitchen, Wi-Fi, TV, dryer, Office setup, Parking, Elevators, Microwave, Fire Extinguisher etc.
 - Increase in amenities would tend to increase in price also.
