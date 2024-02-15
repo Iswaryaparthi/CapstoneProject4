@@ -48,6 +48,7 @@ Explore visualizations created from this dataset using tools like Power BI and S
 ## Analysis and Findings:
 
 - Based on the above analysis, the type of the property plays major role in accommodation. Mostly, people are tending to stay in Apartment and House due to various factors. Compare to other countries, Condominium stay rises in United States.
+- As per the current data, Turkey holds the highest price of around 48k and Portugal having the minimum of 9 for accomodations.
 - In all the countries, the people would prefer cancellation policies for accommodation bookings and it would be in moderate,flexible and even strict_14 days with grace period mode.
 - BoxPlot chart helps to find the price variations and their outliers. In this dataset,the price varies  from minimum to maximun of 50k. Here, the maximum price lying in between of 0-20k but we can see one outlier which is present in the price of around 50k. So, this is the outlier in this particular dataset.
 - Reviews and ratings are playing the important role in accommodation bookings.If the reviews and ratings are high, the bookings will be high.
