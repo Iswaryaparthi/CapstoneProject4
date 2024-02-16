@@ -5,7 +5,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load your dataset
+# Load the dataset
 
 df = pd.read_csv('airbnb_data_v2.csv')
 
@@ -20,7 +20,7 @@ st.markdown('''Airbnb began in 2008 when two designers who had space to share ho
              or a longer stay, there are millions of amazing places to visit.''')
 
 st.markdown(''' On the business front, Airbnb for Work has everything needed to do your job on the road,
-            from top-rated places and collaborative spaces to team-building Experiences and administrative tools 
+            from top-rated places and collaborative spaces to team-building experiences and administrative tools 
             that make managing travel easier than ever.''')
 
 st.subheader(":green[Project views]")
@@ -62,7 +62,7 @@ if selected_cancellation_policy:
 
 st.subheader(':green[Data Visualizations]')
 
-st.markdown('''From here, we will be going to see some insights, data presentations and explorations for the AirBnB dataset
+st.markdown('''We will be going to see some insights, data presentations and explorations for the AirBnB dataset
              using  stacked bar chart,bubble chart,donut chart , findings outliers using box plot chart,
              customized bubble charts, horizontal charts and the findings too.''')
 
@@ -78,6 +78,31 @@ st.markdown('''Based on the above analysis, the type of the property plays major
              Mostly, people are tends to stay in Apartment and House due to various factors. 
             Compare to other countries, Condominium stay rises in United States.''')
 
+# Price variations by country
+
+st.subheader(':violet[Price variations by country]')
+price_by_country = filtered_df.groupby('country')['price'].max().reset_index()
+
+# Visualize price variations among countries
+fig = px.bar(price_by_country, x='country', y='price', title='Maximum Price by Country')
+st.plotly_chart(fig)
+
+min_price = filtered_df['price'].min()
+max_price = filtered_df['price'].max()
+average_price = filtered_df['price'].mean()
+
+st.write(f"Min Price: {min_price}")
+st.write(f"Max Price: {max_price}")
+st.write(f"Average Price: {average_price}")
+
+st.markdown(':red[Findings]')
+
+st.markdown('''Price plays the important role in travel industry. As per the current data, Turkey holds the 
+            highest price of around 48k and Portugal having the minimum of 9 for accomodations.
+             The reason for high price may due to several reasons including more tourist spots, safety, 
+            cleaniness etc., ''')
+
+
 # Visualize the cancellation policy distribution using a donut chart
 
 st.subheader(':violet[Distribution of Cancellation Policies]')
@@ -87,7 +112,8 @@ st.plotly_chart(fig_donut)
 st.markdown(':red[Findings]')
 
 st.markdown('''In all the countries, the people would prefer cancellation policies for accommodation bookings 
-               and it would be in moderate,flexible and even strict_14 days with grace period mode.''')
+               and it would be in moderate,flexible and even strict_14 days with grace period mode. Among other 
+            countries, only in United States shows around 5% cancellation in strict_60''')
 
 # Visualize the relationship between the number of reviews and the average review scores using a bubble chart
 
@@ -163,6 +189,7 @@ st.markdown(':red[Findings]')
 
 st.markdown('''All over the world, people would expect some basic amenities while booking the room for stay. 
               In Airbnb, most hotels, apartments provide basic amenities like kitchen, Wi-Fi, TV, dryer, Office setup,
-              Parking, Elevators, Microwave, Fire Extinguisher etc.''')
+              Parking, Elevators, Microwave, Fire Extinguisher etc. Increase in list of amenities would directly 
+            impact the accomodation prices.''')
 
 st.markdown(":rainbow[Thank you All!]")
